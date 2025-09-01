@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chess box</title>
+        <style>
+            .container {
+      display: flex;
+      flex-wrap: wrap;   /* allows wrapping to next row */
+      width: 640px;      /* 8 boxes × 80px */
+      border: 1px solid black;
+     margin:auto;
+    }/*
+  This selects the odd-numbered boxes and sets their color.
+  It works for the 1st, 3rd, 5th, and 7th squares of each row.
+*/
+.box:nth-child(16n + 1),
+.box:nth-child(16n + 3),
+.box:nth-child(16n + 5),
+.box:nth-child(16n + 7)
+{
+  background-color: white;
+}
+
+/*
+  This selects the even-numbered boxes and sets their color.
+  It works for the 2nd, 4th, 6th, and 8th squares of each row.
+*/
+.box:nth-child(16n + 2),
+.box:nth-child(16n + 4),
+.box:nth-child(16n + 6),
+.box:nth-child(16n + 8),
+.box:nth-child(16n + 9),
+.box:nth-child(16n + 11),
+.box:nth-child(16n + 13),
+.box:nth-child(16n + 15)
+ {
+  background-color: black;
+}
+
+li {
+    list-style-type: none; /* removes the dot */
+    }
+
+      .box {
+      width: 80px;
+      height: 80px;
+      border: 1px solid #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+       box-sizing: border-box;
+    }
+    </style>
+</head>
+<body>
+    <h1  style="color: rebeccapurple;text-align: center;font-size: 65PX; text-decoration: underline ; font-weight: bolder; font-family: cursive;"> CHESS GAME</h1>
+    <DIV class="container">
+        <li class="box" id="box1">♖</li>
+        <li class="box" id="box2" style="color:aliceblue">♘</li>
+        <li class="box" id="box3">♗</li>
+        <li class="box" id="box4" style="color: aliceblue">♔</li>
+        <li class="box" id="box5">♕</li>
+        <li class="box" id="box6"style="color: aliceblue">♗</li>
+        <li class="box" id="box7">♘</li>
+        <li class="box" id="box8"style="color: aliceblue">♖</li>
+        <li class="box" id="box9"style="color: aliceblue">♙</li>
+        <li class="box" id="box10">♙</li>
+        <li class="box" id="box11"style="color: aliceblue">♙</li>
+        <li class="box" id="box12">♙</li>
+        <li class="box" id="box13"style="color: aliceblue">♙</li>
+        <li class="box" id="box14">♙</li>
+        <li class="box" id="box15"style="color: aliceblue">♙</li>
+        <li class="box" id="box16">♙</li>
+        <li class="box" id="box17"></li>
+        <li class="box" id="box18"></li>
+        <li class="box" id="box19"></li>
+        <li class="box" id="box20"></li>
+        <li class="box" id="box21"></li>
+        <li class="box" id="box22"></li>
+        <li class="box" id="box23"></li>
+        <li class="box" id="box24"></li>
+        <li class="box" id="box25"></li>
+        <li class="box" id="box26"></li>
+        <li class="box" id="box27"></li>
+        <li class="box" id="box28"></li>
+        <li class="box" id="box29"></li>
+        <li class="box" id="box30"></li>
+        <li class="box" id="box31"></li>
+        <li class="box" id="box32"></li>
+        <li class="box" id="box33"></li>
+        <li class="box" id="box34"></li>
+        <li class="box" id="box35"></li>
+        <li class="box" id="box36"></li>
+        <li class="box" id="box37"></li>
+        <li class="box" id="box38"></li>
+        <li class="box" id="box39"></li>
+        <li class="box" id="box40"></li>
+        <li class="box" id="box41"></li>
+        <li class="box" id="box42"></li>
+        <li  class="box" id="box43"></li>
+        <li class="box" id="box44"></li>
+        <li class="box" id="box45"></li>
+        <li class="box" id="box46"></li>
+        <li class="box" id="box47"></li>
+        <li class="box" id="box48"></li>
+        <li class="box" id="box49">♙</li>
+        <li class="box" id="box50"style="color: aliceblue">♙</li>
+        <li class="box" id="box51">♙</li>
+        <li class="box" id="box52"style="color: aliceblue">♙</li>
+        <li class="box" id="box53">♙</li>
+        <li class="box" id="box54"style="color: aliceblue">♙</li>
+        <li class="box" id="box55">♙</li>
+        <li class="box" id="box56"style="color: aliceblue">♙</li>
+        <li class="box" id="box57"style="color: aliceblue">♖</li>
+        <li class="box" id="box58">♘</li>
+        <li class="box" id="box59"style="color: aliceblue">♗</li>
+        <li class="box" id="box60">♕</li>
+        <li class="box" id="box61"style="color: aliceblue">♔</li>
+        <li class="box" id="box62">♗</li>
+        <li class="box" id="box63"style="color: aliceblue">♘</li>
+        <li class="box" id="box64">♖</li>
+    </DIV>
+    <p  style="color: rebeccapurple;text-align: center;font-size: 65PX; text-decoration:  underline; font-weight: bolder; font-family: cursive;">©Prashant</p>
+</body>
+</html>
